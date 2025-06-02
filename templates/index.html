@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMDR - Smart Energy Management & Demand Response Capabilities</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>SEMDR</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#solution" class="nav-link">Solution</a>
+                <a href="#partners" class="nav-link">Partners</a>
+                <a href="#updates" class="nav-link">Updates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-leaf"></i>
+                        <span>Smart Energy Innovation</span>
+                    </div>
+                    <h1 class="hero-title">Pioneering Smart Energy for Cyprus's Hospitality Sector</h1>
+                    <p class="hero-subtitle">Implementing innovative smart energy management and demand response systems to revolutionize how Cyprus hotels consume and manage energy</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">
+                            <i class="fas fa-play"></i>
+                            Discover SEMDR
+                        </a>
+                        <a href="#solution" class="btn btn-secondary">
+                            <i class="fas fa-cogs"></i>
+                            Our Technology
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-container">
+                        <!-- Simplified image loading - try .jpeg first, fallback handled by CSS -->
+                        <img src="{{ url_for('static', filename='images/hero-hotel-view.jpeg') }}" alt="Cyprus Hotel Sea View" class="hero-image" />
+                        <div class="hero-image-fallback">
+                            <i class="fas fa-image"></i>
+                            <p>Place your hotel sea view image here:<br><code>static/images/hero-hotel-view.jpeg</code></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-pattern"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About SEMDR</h2>
+                <div class="section-underline"></div>
+                <p class="section-subtitle">Transforming Cyprus's energy landscape through intelligent innovation</p>
+            </div>
+            
+            <!-- Interactive Journey -->
+            <div class="journey-container">
+                <div class="journey-timeline">
+                    <div class="journey-step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>The Challenge</h3>
+                            <p>Cyprus hotels face rising energy costs and grid instability</p>
+                        </div>
+                    </div>
+                    <div class="journey-step" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Our Innovation</h3>
+                            <p>AI-powered smart energy management systems</p>
+                        </div>
+                    </div>
+                    <div class="journey-step" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>The Impact</h3>
+                            <p>Reduced costs, enhanced sustainability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Cards Grid -->
+            <div class="about-grid-new">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow"></div>
+                    <div class="about-icon-new">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Hospitality Focus</h3>
+                    <p>The SEMDR project aims to revolutionize energy use in Cyprus's hotels by introducing smart energy management and demand response capabilities.</p>
+                    <div class="card-metric">
+                        <span class="metric-value">30+</span>
+                        <span class="metric-label">Hotels Targeted</span>
+                    </div>
+                </div>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-glow"></div>
+                    <div class="about-icon-new">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Renewable Integration</h3>
+                    <p>Our core objective is to help integrate renewable energy sources, reduce energy costs for hotels without compromising guest comfort, and enhance the stability of the Cypriot electricity grid.</p>
+                    <div class="card-metric">
+                        <span class="metric-value">25%</span>
+                        <span class="metric-label">Energy Savings</span>
+                    </div>
+                </div>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-glow"></div>
+                    <div class="about-icon-new">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Advanced Technology</h3>
+                    <p>This project advances our innovative solution through comprehensive testing and validation, moving from demonstration to a fully operational system within a partner hotel.</p>
+                    <div class="card-metric">
+                        <span class="metric-value">100%</span>
+                        <span class="metric-label">AI-Driven</span>
+                    </div>
+                </div>
+
+                <div class="about-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-glow"></div>
+                    <div class="about-icon-new">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Grid Flexibility</h3>
+                    <p>SEMDR addresses the critical need for grid flexibility in Cyprus, which has faced challenges with renewable energy curtailment, creating a more resilient energy infrastructure.</p>
+                    <div class="card-metric">
+                        <span class="metric-value">24/7</span>
+                        <span class="metric-label">Monitoring</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Energy Flow Visualization -->
+            <div class="energy-flow-section">
+                <h3>How SEMDR Works</h3>
+                <div class="energy-system">
+                    <!-- Power Grid Background -->
+                    <div class="power-grid-bg">
+                        <div class="grid-line horizontal-line line-1"></div>
+                        <div class="grid-line horizontal-line line-2"></div>
+                        <div class="grid-line vertical-line line-3"></div>
+                        <div class="grid-line vertical-line line-4"></div>
+                    </div>
+                    
+                    <!-- Flow Nodes with Enhanced Design -->
+                    <div class="energy-flow-new">
+                        <div class="flow-node-new hotel-node-new">
+                            <div class="node-pulse"></div>
+                            <div class="node-icon-new">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <h4>Hotel Systems</h4>
+                            <p>HVAC, Lighting, Equipment</p>
+                            <div class="node-details">
+                                <span class="detail-item"><i class="fas fa-thermometer-half"></i> Climate Control</span>
+                                <span class="detail-item"><i class="fas fa-lightbulb"></i> Smart Lighting</span>
+                                <span class="detail-item"><i class="fas fa-plug"></i> Equipment</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Animated Power Line Connection 1 -->
+                        <div class="power-connection">
+                            <div class="power-line">
+                                <div class="power-tower tower-1">
+                                    <div class="tower-mast"></div>
+                                    <div class="tower-arm"></div>
+                                </div>
+                                <div class="electrical-wire">
+                                    <div class="wire-segment"></div>
+                                    <div class="energy-pulse pulse-1"></div>
+                                    <div class="energy-pulse pulse-2"></div>
+                                </div>
+                            </div>
+                            <div class="connection-label">
+                                <i class="fas fa-wifi"></i>
+                                <span>Real-time Data</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flow-node-new ai-node-new">
+                            <div class="node-pulse ai-pulse"></div>
+                            <div class="node-icon-new">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>AI Engine</h4>
+                            <p>Smart Analysis & Optimization</p>
+                            <div class="node-details">
+                                <span class="detail-item"><i class="fas fa-chart-line"></i> Predictive Analytics</span>
+                                <span class="detail-item"><i class="fas fa-cogs"></i> Auto Optimization</span>
+                                <span class="detail-item"><i class="fas fa-robot"></i> Machine Learning</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Animated Power Line Connection 2 -->
+                        <div class="power-connection">
+                            <div class="power-line">
+                                <div class="power-tower tower-2">
+                                    <div class="tower-mast"></div>
+                                    <div class="tower-arm"></div>
+                                </div>
+                                <div class="electrical-wire reverse">
+                                    <div class="wire-segment"></div>
+                                    <div class="energy-pulse pulse-1"></div>
+                                    <div class="energy-pulse pulse-2"></div>
+                                </div>
+                            </div>
+                            <div class="connection-label">
+                                <i class="fas fa-bolt"></i>
+                                <span>Smart Control</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flow-node-new grid-node-new">
+                            <div class="node-pulse grid-pulse"></div>
+                            <div class="node-icon-new">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h4>Power Grid</h4>
+                            <p>Enhanced Stability & Efficiency</p>
+                            <div class="node-details">
+                                <span class="detail-item"><i class="fas fa-leaf"></i> Renewable Integration</span>
+                                <span class="detail-item"><i class="fas fa-balance-scale"></i> Load Balancing</span>
+                                <span class="detail-item"><i class="fas fa-shield-alt"></i> Grid Stability</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Benefits Showcase -->
+                    <div class="flow-benefits">
+                        <div class="benefit-badge energy">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>30% Energy Reduction</span>
+                        </div>
+                        <div class="benefit-badge carbon">
+                            <i class="fas fa-leaf"></i>
+                            <span>Lower Carbon Footprint</span>
+                        </div>
+                        <div class="benefit-badge comfort">
+                            <i class="fas fa-heart"></i>
+                            <span>Guest Comfort Maintained</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Counter -->
+            <div class="impact-counter">
+                <div class="counter-item">
+                    <div class="counter-number" data-target="30">0</div>
+                    <div class="counter-label">Energy Reduction %</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="50">0</div>
+                    <div class="counter-label">CO2 Savings Tons/Year</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="24">0</div>
+                    <div class="counter-label">Hours Monitoring</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="100">0</div>
+                    <div class="counter-label">Guest Comfort %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Innovative Approach</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="solution-content">
+                <div class="solution-intro">
+                    <p>We are deploying an advanced system that leverages Artificial Intelligence, IoT sensors, and real-time data analytics to optimize energy consumption dynamically.</p>
+                </div>
+                <div class="solution-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI-Powered Algorithms</h3>
+                        <p>Advanced demand response algorithms tailored specifically for the hospitality sector</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                        <h3>Real-time Monitoring</h3>
+                        <p>Comprehensive energy monitoring and analytics for optimal performance</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>User-Friendly Interface</h3>
+                        <p>Intuitive dashboard designed for hotel staff and management</p>
+                    </div>
+                </div>
+                <div class="benefits">
+                    <h3>Key Benefits</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>Reduced energy expenses for hotels</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Enhanced grid stability and better renewable integration</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-seedling"></i>
+                            <span>Lower carbon emissions supporting Cyprus's sustainability goals</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Future-ready for energy market flexibility trading</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-diagram">
+                    <div class="diagram-placeholder">
+                        <i class="fas fa-sitemap"></i>
+                        <p>System Diagram Placeholder<br><small>Illustrating hotel assets → AI cloud → grid connection</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Consortium</h2>
+                <div class="section-underline"></div>
+                <p>SEMDR is a collaborative effort bringing together unique expertise</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <div class="logo-placeholder">
+                            <i class="fas fa-building"></i>
+                            <span>IMKA Logo</span>
+                        </div>
+                    </div>
+                    <div class="partner-info">
+                        <h3>IMKA</h3>
+                        <p class="partner-role">Host Organisation</p>
+                        <p>Leading property management company with expertise in energy efficiency solutions and project commercialization. Responsible for project coordination and pilot implementation.</p>
+                    </div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <div class="logo-placeholder">
+                            <i class="fas fa-microchip"></i>
+                            <span>Neura Logo</span>
+                        </div>
+                    </div>
+                    <div class="partner-info">
+                        <h3>Neura (GridQ LTD)</h3>
+                        <p class="partner-role">Partner Organisation 1</p>
+                        <p>Specialists in AI and energy management software development, providing the core technology for the platform.</p>
+                    </div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <div class="logo-placeholder">
+                            <i class="fas fa-cogs"></i>
+                            <span>Restrol Logo</span>
+                        </div>
+                    </div>
+                    <div class="partner-info">
+                        <h3>Restrol</h3>
+                        <p class="partner-role">Partner Organisation 2</p>
+                        <p>Experts in industrial automation, SCADA systems, and hardware integration, ensuring robust data collection and system deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates" class="updates">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News & Progress</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="updates-content">
+                {% for update in news_updates %}
+                <div class="update-card">
+                    <div class="update-date">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>{{ update.date }}</span>
+                    </div>
+                    <div class="update-content">
+                        <h3>{{ update.title }}</h3>
+                        <p>{{ update.content }}</p>
+                        <div class="update-image-placeholder">
+                            <i class="fas fa-camera"></i>
+                            <p>Update Image Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="future-updates">
+                    <div class="future-placeholder">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>Space for future updates (newest first)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="section-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>For inquiries about the SEMDR project, please contact us at: <a href="mailto:info@demandresponsecy.com">info@demandresponsecy.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-funding">
+                    <p><strong>Funding:</strong> Funded by the European Union - NextGenerationEU and the Republic of Cyprus Recovery and Resilience Plan. Part of the 'RESTART 2016-2020' Programmes by the Research and Innovation Foundation.</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 demandresponsecy.com - All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="footer-logos">
+                <div class="eu-logo-placeholder">
+                    <i class="fas fa-flag"></i>
+                    <span>EU Logo</span>
+                </div>
+                <div class="cyprus-logo-placeholder">
+                    <i class="fas fa-landmark"></i>
+                    <span>Cyprus Logo</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 
