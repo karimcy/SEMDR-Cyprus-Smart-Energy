@@ -1,31 +1,32 @@
-# SEMDR Website - Smart Energy Management & Demand Response Capabilities
+# SEMDR - Smart Energy Management & Demand Response
 
-A modern, responsive website for the SEMDR project showcasing smart energy management solutions for Cyprus's hospitality sector.
+A modern website showcasing SEMDR's smart energy management capabilities for Cyprus's hospitality sector.
 
 ## Features
 
-- **Modern Design**: Clean, professional layout with energy-themed color scheme
-- **Responsive**: Works perfectly on desktop, tablet, and mobile devices
-- **Interactive**: Smooth scrolling navigation and hover effects
-- **Professional Icons**: FontAwesome icons throughout the design
-- **Image Placeholders**: Clearly marked spaces for logos and photos
-- **Easy to Update**: Simple structure for adding news updates
+- Modern responsive design
+- Interactive timeline and animations  
+- Hero section with Cyprus hotel imagery
+- Smart energy flow visualization
+- Partner information and EU funding acknowledgments
+- Real-time updates section with images
 
-## Quick Start
+## Setup
 
-1. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run the application: `python app.py`
+3. Visit: `http://localhost:8000`
 
-2. **Run the Website**
-   ```bash
-   python app.py
-   ```
+## Technology Stack
 
-3. **View in Browser**
-   - Open your browser and go to: `http://localhost:5000`
-   - The website will be running locally
+- Flask (Python web framework)
+- HTML5/CSS3 with modern animations
+- JavaScript for interactivity
+- FontAwesome icons
+- Responsive design
+
+---
+*Last updated: June 3, 2025*
 
 ## Project Structure
 
