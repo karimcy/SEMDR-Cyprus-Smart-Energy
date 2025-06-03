@@ -8,7 +8,9 @@ news_updates = [
     {
         'date': 'June 2, 2025',
         'title': 'Successful Site Visit Conducted!',
-        'content': 'Our team recently completed an initial site visit to our partner hotel. This marks an important first step in assessing the existing infrastructure and planning for the installation of our smart energy monitoring equipment. We\'re excited to move forward!'
+        'content': 'Our team recently completed an initial site visit to our partner hotel. This marks an important first step in assessing the existing infrastructure and planning for the installation of our smart energy monitoring equipment. We\'re excited to move forward!',
+        'has_image': True,
+        'image_filename': 'site-visit-image.heic'
     }
 ]
 

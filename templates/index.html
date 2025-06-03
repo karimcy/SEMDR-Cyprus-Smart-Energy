@@ -151,19 +151,6 @@
                 <div class="about-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="card-glow"></div>
                     <div class="about-icon-new">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Advanced Technology</h3>
-                    <p>This project advances our innovative solution through comprehensive testing and validation, moving from demonstration to a fully operational system within a partner hotel.</p>
-                    <div class="card-metric">
-                        <span class="metric-value">100%</span>
-                        <span class="metric-label">AI-Driven</span>
-                    </div>
-                </div>
-
-                <div class="about-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-glow"></div>
-                    <div class="about-icon-new">
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <h3>Grid Flexibility</h3>
@@ -331,19 +318,19 @@
                     <div class="update-content">
                         <h3>{{ update.title }}</h3>
                         <p>{{ update.content }}</p>
+                        {% if update.has_image %}
+                        <div class="update-image">
+                            <img src="{{ url_for('static', filename='images/' + update.image_filename) }}" alt="{{ update.title }}" class="update-photo" />
+                        </div>
+                        {% else %}
                         <div class="update-image-placeholder">
                             <i class="fas fa-camera"></i>
                             <p>Update Image Placeholder</p>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
-                <div class="future-updates">
-                    <div class="future-placeholder">
-                        <i class="fas fa-plus-circle"></i>
-                        <p>Space for future updates (newest first)</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

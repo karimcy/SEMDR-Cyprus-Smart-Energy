@@ -1439,3 +1439,24 @@ section {
         gap: 0.5rem;
     }
 }
+
+/* Update Image Styling */
+.update-image {
+    margin-top: 1.5rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.update-photo {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+}
+
+.update-photo:hover {
+    transform: scale(1.02);
+}
