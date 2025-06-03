@@ -10,7 +10,7 @@ news_updates = [
         'title': 'Successful Site Visit Conducted!',
         'content': 'Our team recently completed an initial site visit to our partner hotel. This marks an important first step in assessing the existing infrastructure and planning for the installation of our smart energy monitoring equipment. We\'re excited to move forward!',
         'has_image': True,
-        'image_filename': 'site-visit-image.heic'
+        'image_filename': 'sitevisit.jpeg'
     }
 ]
 
